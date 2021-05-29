@@ -1,0 +1,43 @@
+<!doctype html>
+<title>Комикс</title>
+<style>
+body { 
+  display: grid;
+  grid-template-areas: 
+    "header header header"
+    "nav article ads"
+    "footer footer footer";
+  grid-template-rows: 100px 1fr 100px;
+  grid-template-columns: 30% 1fr 15%;
+  grid-gap: 9px;
+  height: 100vh;
+  margin: 0;
+  }
+header, footer, article, nav, div {
+  padding: 15px;
+  background:  #00ffff;
+}
+#pageHeader {
+  grid-area: header;
+}
+#pageFooter {
+  grid-area: footer;
+}
+#mainArticle { 
+  grid-area: article;      
+  }
+#mainNav { 
+  grid-area: nav; 
+  }
+#siteAds { 
+  grid-area: ads; 
+  }
+</style>
+<body>
+  <header id="pageHeader">красивая картинка 1</header>
+  <article id="mainArticle">эффектный взрыв</article>
+  <nav id="mainNav">красивая картинка 2</nav>
+  <div id="siteAds">пожар</div>
+  <footer id="pageFooter">красивая картинка 3</footer>
+</body> 
+
